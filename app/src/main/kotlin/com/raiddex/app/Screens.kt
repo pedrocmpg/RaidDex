@@ -312,7 +312,8 @@ fun SettingsScreen(vm: MainViewModel) {
     Scaffold(topBar = { TopAppBar(title = { Text("Configurações") }) }) { pad ->
         Column(Modifier.padding(pad).padding(12.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
             OutlinedTextField(level, { level = it; it.toIntOrNull()?.let(vm::changeTrainerLevel) }, label = { Text("Nível de treinador") }, keyboardOptions = numeric, modifier = Modifier.fillMaxWidth())
-            Text("Nível máximo de Pokémon cadastrável: ${vm.settings.maxPokemonLevel.toInt()}")
+            var arc by remember { mutableStateOf(vm.settings.arcMaxLevel.toString()) }
+            OutlinedTextField(arc, { arc = it; it.toIntOrNull()?.let { v -> vm.settings.arcMaxLevel = v } }, label = { Text("Nível na ponta do arco (detalhe do Pokémon)") }, keyboardOptions = numeric, modifier = Modifier.fillMaxWidth())
             Text("Dados do jogo: versão ${vm.data.version}")
             Button(onClick = { vm.updateData() }) { Text("Atualizar dados") }
             if (vm.updateStatus.isNotEmpty()) Text(vm.updateStatus)
