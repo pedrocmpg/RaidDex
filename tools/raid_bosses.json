@@ -1,0 +1,16 @@
+{
+  "_comment": "Mantido a mao: o Game Master nao traz PS/CPM de chefes de raid. PENDENTE: conferir contra duas fontes (ver PENDENCIAS.md).",
+  "tiers": [
+    {"id": "T1", "label": "1 estrela", "hp": 600, "cpm": 0.5974, "confirmed": false, "source": "Bulbapedia (Raid Battle GO); falta segunda fonte"},
+    {"id": "T3", "label": "3 estrelas", "hp": 3600, "cpm": 0.7317, "confirmed": false, "source": "Bulbapedia lista 0.73; 0.7317 = CPM do nivel 30 na tabela do Game Master"},
+    {"id": "T5", "label": "5 estrelas (lendario)", "hp": 15000, "cpm": 0.7903, "confirmed": false, "source": "HP: Bulbapedia; CPM 0.7903 = nivel 40; nao confirmado"},
+    {"id": "MEGA", "label": "Mega", "hp": 9000, "cpm": 0.7903, "confirmed": false, "source": "Bulbapedia lista 0.79 (= nivel 40)"},
+    {"id": "PRIMAL", "label": "Primal", "hp": 22500, "cpm": 0.7903, "confirmed": false, "source": "Sem fonte consultada; valor de memoria"}
+  ],
+  "params": {
+    "bossIv": 15,
+    "bossMoveDelaySeconds": 2.0,
+    "dodgeDamageReduction": 0.75,
+    "_comment": "bossMoveDelaySeconds: pausa entre ataques do chefe; parametro de ajuste do motor analitico."
+  }
+}

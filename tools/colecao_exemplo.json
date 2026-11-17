@@ -1,0 +1,6 @@
+[
+  {"species": "SWAMPERT", "level": 40, "atk": 15, "def": 15, "sta": 15, "fast": "WATER_GUN_FAST", "charged": "HYDRO_CANNON"},
+  {"species": "SWAMPERT", "level": 40, "atk": 10, "def": 12, "sta": 13, "fast": "MUD_SHOT_FAST", "charged": "SLUDGE"},
+  {"species": "RAICHU", "level": 35, "atk": 14, "def": 11, "sta": 12, "fast": "VOLT_SWITCH_FAST", "charged": "WILD_CHARGE"},
+  {"species": "KYOGRE", "level": 40, "atk": 15, "def": 14, "sta": 15, "fast": "WATERFALL_FAST", "charged": "SURF"}
+]
